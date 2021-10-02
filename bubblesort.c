@@ -35,8 +35,14 @@ void Bubble(int A[],int n)
 
 int main()
 {
-	int A[]={3,5,7,8,15,10},n=6,i;
-	Bubble(A,6);
+	int A[100], n,i,c;
+	printf("Enter number of elements\n");
+        scanf("%d", &n);
+	printf("Enter %d integers\n", n);
+
+       for(c=0;c<n;c++)
+       scanf("%d",&A[c]);
+       Bubble(A,6);
 	for (i=0;i<6;i++)
 		printf("%d ",A[i]);
 	printf(" \n");
