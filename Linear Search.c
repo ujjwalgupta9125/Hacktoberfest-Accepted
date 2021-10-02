@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 void LSearch(int A[],int n,int k)
 {
    int i,p=0;
@@ -26,4 +27,5 @@ void main()
    printf("\n Enter no to search :");
    scanf("%d",&k);
    LSearch(A,n,k);
+   getch();
 }
